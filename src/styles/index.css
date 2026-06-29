@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: light; }
+
+  body {
+    @apply font-sans text-ink antialiased;
+    background-color: #F3F3F3; /* Dirty white — page canvas behind white cards */
+  }
+
+  *:focus-visible {
+    outline: 2px solid #FC2779;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  .active\:scale-98:active { transform: scale(0.98); }
+}
